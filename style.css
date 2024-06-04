@@ -1,0 +1,146 @@
+/* Estilo global para o corpo da página */
+body {
+  font-family: 'Arial', sans-serif; /* Define a fonte principal */
+  background-color: #c6dcff; /* Cor de fundo do corpo */
+  margin: 0; /* Remove a margem padrão */
+  padding: 20px; /* Adiciona preenchimento ao corpo */
+  display: flex; /* Usa flexbox para alinhar os itens */
+  justify-content: center; /* Centraliza o conteúdo horizontalmente */
+  align-items: center; /* Centraliza o conteúdo verticalmente */
+  height: 100vh; /* Define a altura da tela como 100% da altura da janela de visualização */
+}
+
+/* Estilo do contêiner principal do aplicativo */
+.app-container {
+  width: 720px;
+  height: 680px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  background-color: rgb(255, 238, 225); /* Cor de fundo branca */
+  border-radius: 10px; /* Arredonda os cantos */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Adiciona sombra */
+  padding: 20px; /* Adiciona preenchimento interno */
+  max-width: 800px; /* Largura máxima do contêiner */
+  width: 100%; /* Largura total do contêiner */
+  text-align: center; /* Centraliza o texto */
+}
+
+/* Estilo do título principal */
+h1 {
+  font-family: 'Fredoka One', cursive; /* Define a fonte do título */
+  color: #4B4BF2; /* Cor do texto */
+  margin-bottom: 15px; /* Espaçamento inferior */
+  font-size: 5em; /* Tamanho da fonte */
+  text-align: center; /* Centraliza o texto */
+}
+
+/* Estilo do conteúdo principal */
+.main-content {
+  display: flex; /* Usa flexbox para alinhar os itens */
+  justify-content: space-between; /* Espaça os itens igualmente */
+  align-items: center; /* Alinha os itens verticalmente ao centro */
+  gap: 20px; /* Espaçamento entre os itens */
+}
+
+/* Estilo do contêiner da roda */
+.wheel-container {
+  flex: 1; /* Faz com que o contêiner ocupe o mesmo espaço que os outros flex-items */
+  display: flex; /* Usa flexbox para alinhar os itens */
+  justify-content: center; /* Centraliza o conteúdo horizontalmente */
+  align-items: center; /* Centraliza o conteúdo verticalmente */
+  margin-bottom: 20px; /* Espaçamento inferior */
+}
+
+/* Estilo do contêiner dos inputs */
+.inputs-container {
+  flex: 1; /* Faz com que o contêiner ocupe o mesmo espaço que os outros flex-items */
+  display: grid; /* Usa grid layout */
+  grid-template-columns: repeat(2, 1fr); /* Define duas colunas de largura igual */
+  gap: 10px; /* Espaçamento entre os itens da grid */
+  align-items: center; /* Alinha os itens verticalmente ao centro */
+  height: 682px;
+  margin-top: 10px;
+}
+
+/* Estilo do grupo de inputs */
+.input-group {
+  display: flex; /* Usa flexbox para alinhar os itens */
+  flex-direction: column; /* Alinha os itens em coluna */
+  align-items: center; /* Centraliza os itens horizontalmente */
+  margin-top:5px ;
+}
+
+
+#autoconhecimento {
+  background-color: #F20505;
+}
+#autoestima {
+  background-color: #FF8000;
+}
+#gestaoEmocoes {
+  background-color: #FFFF00;
+}
+#relacionamentos {
+  background-color: #80FF00;
+}
+#empatia {
+  background-color: #00FF00;
+}
+#comunicacao {
+  background-color: #00FF80;
+}
+#proposito {
+  background-color: #00FFFF;
+}
+#autocontrole {
+  background-color: #0080FF;
+}
+#motivacao {
+  background-color: #0000FF;
+}
+#bemEstar {
+  background-color: #8000FF;
+}
+#aceitacao {
+  background-color: #FF00FF;
+}
+#confianca {
+  background-color: #FF0080;
+}
+
+/* Estilo das labels */
+label {
+  margin-bottom: 5px; /* Espaçamento inferior */
+  font-weight: bold; /* Negrito */
+  font-size: 14px; /* Tamanho da fonte */
+}
+
+/* Estilo dos inputs */
+input {
+  padding: 10px; /* Preenchimento interno */
+  width: 100%; /* Largura total do contêiner pai */
+  box-sizing: border-box; /* Inclui padding e border na largura total */
+  border: 1px solid rgb(3, 0, 0); /* Borda sólida */
+  border-radius: 5px; /* Arredonda os cantos */
+  text-align: center; /* Centraliza o texto */
+  font-size: 16px; /* Tamanho da fonte */
+}
+
+/* Estilo do botão */
+button {
+  grid-column: span 2; /* Faz o botão ocupar duas colunas da grid */
+  margin-top: 20px; /* Espaçamento superior */
+  padding: 10px 20px; /* Preenchimento interno */
+  background-color: #FF601D; /* Cor de fundo verde */
+  color: white; /* Cor do texto branca */
+  border: none; /* Remove a borda */
+  border-radius: 5px; /* Arredonda os cantos */
+  cursor: pointer; /* Cursor de mãozinha */
+  transition: background-color 0.3s ease; /* Transição suave na cor de fundo */
+  font-size: 16px; /* Tamanho da fonte */
+}
+
+/* Estilo do botão ao passar o mouse */
+button:hover {
+  background-color: #FF9669; /* Cor de fundo mais clara */
+}
