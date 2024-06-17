@@ -772,12 +772,13 @@ Banner Style
 */
 
 .main-banner {
-  background-image: url(../images/banner-bg.jpg);
+  background-image: url(../images/capa.png);
   background-position: center center;
   background-size: cover;
   min-height: 380px;
   border-radius: 23px;
   padding: 80px 60px;
+  background-position: left 245px center;
 }
 
 .main-banner h6 {
@@ -791,6 +792,7 @@ Banner Style
   font-size: 45px;
   text-transform: uppercase;
   margin-bottom: 25px;
+  color: #2FC1E8;
 }
 
 .main-banner h4 em {
