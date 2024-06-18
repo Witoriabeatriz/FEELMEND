@@ -221,7 +221,7 @@ section {
 }
 
 .heading-section h4 em {
-  color: #fff;
+  color: #ec6090;
   font-style: normal;
   text-decoration: underline;
 }
@@ -381,7 +381,7 @@ Header Style
 }
 
 .header-area .main-nav #search input {
-  background-color: #27292a;
+  background-color: #f8f6e3;
   height: 46px;
   border-radius: 23px;
   border: none;
@@ -460,7 +460,8 @@ Header Style
 }
 
 .header-area .main-nav .nav li:last-child a {
-  background-color: #27292a;
+  background-color: #f8f6e3
+;
   padding: 8px 10px 8px 20px;
   border-radius: 23px;
 }
@@ -809,12 +810,12 @@ Most Popular Style
 .most-popular {
   margin-top: 60px;
   padding: 30px;
-  background-color: #1f2122;
+  background-color: #fff;
   border-radius: 23px;
 }
 
 .most-popular .item {
-  background-color: #27292a;
+  background-color: #2FC1E8;
   padding: 30px 15px;
   border-radius: 23px;
   margin-bottom: 30px;
@@ -926,7 +927,7 @@ Gaming Library Style
 }
 
 .gaming-library .item ul li span {
-  color: #666;
+  color: #f8f6e3;
   font-size: 14px;
 }
 
