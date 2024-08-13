@@ -226,6 +226,10 @@ section {
   text-decoration: underline;
 }
 
+.heading-section p {
+  color: white;
+}
+
 /* 
 ---------------------------------------------
 Pre-loader Style
