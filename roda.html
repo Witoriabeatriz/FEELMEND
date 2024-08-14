@@ -1,197 +1,285 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+<head>
+  <title>Roda da Vida</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background-color: #f0f0f0;
+    }
 
-  <head>
+    .container {
+      display: flex;
+      gap: 50px;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
 
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    .wheel {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
 
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    .wheel-title {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
 
-    <title></title>
+    .wheel-chart {
+      width: 300px;
+      height: 300px;
+      position: relative;
+    }
 
-    <!-- Bootstrap core CSS -->
-    <link href="cyborg-master/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    .wheel-slice {
+      position: absolute;
+      width: 50%;
+      height: 50%;
+      top: 25%;
+      left: 25%;
+      transform-origin: 50% 100%;
+    }
 
+    .wheel-slice-label {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 12px;
+      text-align: center;
+    }
 
-    <!-- Additional CSS Files -->
-    <link rel="stylesheet" href="cyborg-master/assets/css/fontawesome.css">
-    <link rel="stylesheet" href="cyborg-master/assets/css/templatemo-cyborg-gaming.css">
-    <link rel="stylesheet" href="cyborg-master/assets/css/owl.css">
-    <link rel="stylesheet" href="cyborg-master/assets/css/animate.css">
-    <link rel="stylesheet"href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
-<!--
+    .wheel-slice-percentage {
+      position: absolute;
+      bottom: 10px;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 10px;
+      text-align: center;
+    }
 
-TemplateMo 579 Cyborg Gaming
+    .wheel-slice-color {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+    }
 
-https://templatemo.com/tm-579-cyborg-gaming
+    .wheel-slice-color-1 {
+      background-color: #00b050;
+    }
 
--->
-  </head>
+    .wheel-slice-color-2 {
+      background-color: #ffcc00;
+    }
 
+    .wheel-slice-color-3 {
+      background-color: #ff6600;
+    }
+
+    .wheel-slice-color-4 {
+      background-color: #00ccff;
+    }
+
+    .wheel-slice-color-5 {
+      background-color: #ff0000;
+    }
+
+    .wheel-slice-color-6 {
+      background-color: #6699ff;
+    }
+
+    .wheel-slice-color-7 {
+      background-color: #ff99cc;
+    }
+
+    .wheel-slice-color-8 {
+      background-color: #99ff99;
+    }
+
+    .wheel-slice-color-9 {
+      background-color: #cc00cc;
+    }
+
+    .wheel-slice-color-10 {
+      background-color: #ccffcc;
+    }
+
+    .wheel-slice-color-11 {
+      background-color: #ffff00;
+    }
+
+    .wheel-slice-color-12 {
+      background-color: #0099cc;
+    }
+
+    .scoreboard {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .scoreboard-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px;
+      background-color: #f5f5f5;
+      border-radius: 5px;
+    }
+
+    .scoreboard-item-label {
+      font-weight: bold;
+    }
+
+    .scoreboard-item-score {
+      font-size: 16px;
+      font-weight: bold;
+    }
+
+    .scoreboard-item-arrow {
+      font-size: 18px;
+      color: #666;
+    }
+
+    .scoreboard-item-arrow-up {
+      transform: rotate(90deg);
+    }
+
+    .scoreboard-item-arrow-down {
+      transform: rotate(-90deg);
+    }
+  </style>
+</head>
 <body>
-
-  <!-- ***** Preloader Start ***** -->
-  <div id="js-preloader" class="js-preloader">
-    <div class="preloader-inner">
-      <span class="dot"></span>
-      <div class="dots">
-        <span></span>
-        <span></span>
-        <span></span>
+  <div class="container">
+    <div class="wheel">
+      <div class="wheel-title">Roda da Vida</div>
+      <div class="wheel-chart">
+        <div class="wheel-slice" style="transform: rotate(0deg)">
+          <div class="wheel-slice-color wheel-slice-color-1"></div>
+          <div class="wheel-slice-label">Bem-Estar</div>
+          <div class="wheel-slice-percentage">6.6%</div>
+        </div>
+        <div class="wheel-slice" style="transform: rotate(30deg)">
+          <div class="wheel-slice-color wheel-slice-color-2"></div>
+          <div class="wheel-slice-label">Int. Emocional</div>
+          <div class="wheel-slice-percentage">10.5%</div>
+        </div>
+        <div class="wheel-slice" style="transform: rotate(60deg)">
+          <div class="wheel-slice-color wheel-slice-color-3"></div>
+          <div class="wheel-slice-label">Autocontrole</div>
+          <div class="wheel-slice-percentage">7.9%</div>
+        </div>
+        <div class="wheel-slice" style="transform: rotate(90deg)">
+          <div class="wheel-slice-color wheel-slice-color-4"></div>
+          <div class="wheel-slice-label">Comunicação</div>
+          <div class="wheel-slice-percentage">6.6%</div>
+        </div>
+        <div class="wheel-slice" style="transform: rotate(120deg)">
+          <div class="wheel-slice-color wheel-slice-color-5"></div>
+          <div class="wheel-slice-label">Relacionamentos</div>
+          <div class="wheel-slice-percentage">13.2%</div>
+        </div>
+        <div class="wheel-slice" style="transform: rotate(150deg)">
+          <div class="wheel-slice-color wheel-slice-color-6"></div>
+          <div class="wheel-slice-label">Autoestima</div>
+          <div class="wheel-slice-percentage">2.6%</div>
+        </div>
+        <div class="wheel-slice" style="transform: rotate(180deg)">
+          <div class="wheel-slice-color wheel-slice-color-7"></div>
+          <div class="wheel-slice-label">Aceitação</div>
+          <div class="wheel-slice-percentage">11.8%</div>
+        </div>
+        <div class="wheel-slice" style="transform: rotate(210deg)">
+          <div class="wheel-slice-color wheel-slice-color-8"></div>
+          <div class="wheel-slice-label">Motivação</div>
+          <div class="wheel-slice-percentage">9.2%</div>
+        </div>
+        <div class="wheel-slice" style="transform: rotate(240deg)">
+          <div class="wheel-slice-color wheel-slice-color-9"></div>
+          <div class="wheel-slice-label">Empatia</div>
+          <div class="wheel-slice-percentage">13.2%</div>
+        </div>
+        <div class="wheel-slice" style="transform: rotate(270deg)">
+          <div class="wheel-slice-color wheel-slice-color-10"></div>
+          <div class="wheel-slice-label">Propósito</div>
+          <div class="wheel-slice-percentage">11.8%</div>
+        </div>
+      </div>
+    </div>
+    <div class="scoreboard">
+      <div class="scoreboard-item">
+        <div class="scoreboard-item-label">Autoconhecimento</div>
+        <div class="scoreboard-item-score">3</div>
+        <div class="scoreboard-item-arrow scoreboard-item-arrow-up"></div>
+      </div>
+      <div class="scoreboard-item">
+        <div class="scoreboard-item-label">Autoestima</div>
+        <div class="scoreboard-item-score">2</div>
+        <div class="scoreboard-item-arrow scoreboard-item-arrow-up"></div>
+      </div>
+      <div class="scoreboard-item">
+        <div class="scoreboard-item-label">Inteligência Emocional</div>
+        <div class="scoreboard-item-score">8</div>
+        <div class="scoreboard-item-arrow scoreboard-item-arrow-down"></div>
+      </div>
+      <div class="scoreboard-item">
+        <div class="scoreboard-item-label">Relacionamentos</div>
+        <div class="scoreboard-item-score">10</div>
+        <div class="scoreboard-item-arrow scoreboard-item-arrow-down"></div>
+      </div>
+      <div class="scoreboard-item">
+        <div class="scoreboard-item-label">Empatia</div>
+        <div class="scoreboard-item-score">10</div>
+        <div class="scoreboard-item-arrow scoreboard-item-arrow-up"></div>
+      </div>
+      <div class="scoreboard-item">
+        <div class="scoreboard-item-label">Propósito</div>
+        <div class="scoreboard-item-score">9</div>
+        <div class="scoreboard-item-arrow scoreboard-item-arrow-up"></div>
+      </div>
+      <div class="scoreboard-item">
+        <div class="scoreboard-item-label">Motivação</div>
+        <div class="scoreboard-item-score">7</div>
+        <div class="scoreboard-item-arrow scoreboard-item-arrow-down"></div>
+      </div>
+      <div class="scoreboard-item">
+        <div class="scoreboard-item-label">Aceitação</div>
+        <div class="scoreboard-item-score">9</div>
+        <div class="scoreboard-item-arrow scoreboard-item-arrow-down"></div>
+      </div>
+      <div class="scoreboard-item">
+        <div class="scoreboard-item-label">Comunicação</div>
+        <div class="scoreboard-item-score">5</div>
+        <div class="scoreboard-item-arrow scoreboard-item-arrow-up"></div>
+      </div>
+      <div class="scoreboard-item">
+        <div class="scoreboard-item-label">Autocontrole</div>
+        <div class="scoreboard-item-score">6</div>
+        <div class="scoreboard-item-arrow scoreboard-item-arrow-down"></div>
+      </div>
+      <div class="scoreboard-item">
+        <div class="scoreboard-item-label">Bem-Estar</div>
+        <div class="scoreboard-item-score">5</div>
+        <div class="scoreboard-item-arrow scoreboard-item-arrow-down"></div>
+      </div>
+      <div class="scoreboard-item">
+        <div class="scoreboard-item-label">Confiança</div>
+        <div class="scoreboard-item-score">2</div>
+        <div class="scoreboard-item-arrow scoreboard-item-arrow-up"></div>
       </div>
     </div>
   </div>
-  <!-- ***** Preloader End ***** -->
-
-  <!-- ***** Header Area Start ***** -->
-  <header class="header-area header-sticky">
-    <div class="container">
-        <div class="row">
-            <div class="col-12">
-                <nav class="main-nav">
-                    <!-- ***** Logo Start ***** -->
-                    <a href="index.html" class="logo">
-                      <img src="cyborg-master/assets/images/logo.png" alt="Logo">
-
-                    </a>
-                    <!-- ***** Logo End ***** -->
-                    <!-- ***** Search End ***** -->
-                    <div class="search-input">
-                      <form id="search" action="#">
-                        <input type="text" placeholder="Digite algo" id='searchText' name="searchKeyword" onkeypress="handle" />
-                        <i class="fa fa-search"></i>
-                      </form>
-                    </div>
-                    <!-- ***** Search End ***** -->
-                    <!-- ***** Menu Start ***** -->
-                    <ul class="nav">
-                        <li><a href="index.html" class="active">Início</a></li>
-                        <li><a href="browse.html">Navegue</a></li>
-                        <li><a href="details.html">Detalhes</a></li>
-                        <li><a href="streams.html">Fluxos</a></li>
-                        <li><a href="profile.html">Perfil <img src="assets/images/profile-header.jpg" alt=""></a></li>
-                    </ul>   
-                    <a class='menu-trigger'>
-                        <span>Menu</span>
-                    </a>
-                    <!-- ***** Menu End ***** -->
-                </nav>
-            </div>
-        </div>
-    </div>
-  </header>
-
-  <div class="container">
-    <div class="row">
-        <div class="col-lg-12">
-            <div class="page-content">
-  <h1>RODA DA VIDA</h1> <!-- Título da página -->
-    <div class="app-container"> <!-- Contêiner principal da aplicação -->
-        <div class="main-content"> <!-- Contêiner do conteúdo principal -->
-            <div class="wheel-container"> <!-- Contêiner da roda da vida -->
-                <canvas id="wheel" width="450" height="450"></canvas> <!-- Canvas para desenhar a roda da vida -->
-            </div>
-            <div class="inputs-container"> <!-- Contêiner dos inputs -->
-                <!-- Grupo de input para cada valor da roda da vida -->
-                <div class="input-group">
-                    <label for="autoconhecimento">Autoconhecimento</label>
-                    <input type="number" id="autoconhecimento" min="1" max="10" value="7">
-                </div>
-                <div class="input-group" >
-                    <label for="autoestima">Autoestima</label>
-                    <input type="number" id="autoestima" min="1" max="10" value="5">
-                </div>
-                <div class="input-group">
-                    <label for="gestaoEmocoes">Gestão de Emoções</label>
-                    <input type="number" id="gestaoEmocoes" min="1" max="10" value="6">
-                </div>
-                <div class="input-group">
-                    <label for="relacionamentos">Relacionamentos</label>
-                    <input type="number" id="relacionamentos" min="1" max="10" value="4">
-                </div>
-                <div class="input-group">
-                    <label for="empatia">Empatia</label>
-                    <input type="number" id="empatia" min="1" max="10" value="3">
-                </div>
-                <div class="input-group">
-                    <label for="comunicacao">Comunicação</label>
-                    <input type="number" id="comunicacao" min="1" max="10" value="5">
-                </div>
-                <div class="input-group">
-                    <label for="proposito">Propósito</label>
-                    <input type="number" id="proposito" min="1" max="10" value="8">
-                </div>
-                <div class="input-group">
-                    <label for="autocontrole">Autocontrole</label>
-                    <input type="number" id="autocontrole" min="1" max="10" value="6">
-                </div>
-                <div class="input-group">
-                    <label for="motivacao">Motivação</label>
-                    <input type="number" id="motivacao" min="1" max="10" value="3">
-                </div>
-                <div class="input-group">
-                    <label for="bemEstar">Bem-estar</label>
-                    <input type="number" id="bemEstar" min="1" max="10" value="5">
-                </div>
-                <div class="input-group">
-                    <label for="aceitacao">Aceitação</label>
-                    <input type="number" id="aceitacao" min="1" max="10" value="8">
-                </div>
-                <div class="input-group">
-                    <label for="confianca">Confiança</label>
-                    <input type="number" id="confianca" min="1" max="10" value="6">
-                </div>
-                <!-- Botão para atualizar a roda da vida -->
-                <button onclick="updateWheel()">Atualizar Roda</button>
-            </div>
-        </div>
-    </div>
-    </div>
-</div>
-</div>
-</div>
-    
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <p>Copyright © 2036 <a href="#">Cyborg Gaming</a> Company. All rights reserved. 
-                        
-                        <br>Design: <a href="https://templatemo.com" target="_blank" title="free CSS templates">TemplateMo</a>  Distributed By <a href="https://themewagon.com" target="_blank" >ThemeWagon</a></p>
-                    </div>
-      </div>
-    </div>
-</footer>
-
-
-<!-- Scripts -->
-<!-- Bootstrap core JavaScript -->
-<script src="script.js"></script> <!-- Script JavaScript -->
-<script src="cyborg-master/vendor/jquery/jquery.min.js"></script>
-<script src="cyborg-master/vendor/bootstrap/js/bootstrap.min.js"></script>
-
-<script src="cyborg-master/assets/js/isotope.min.js"></script>
-  <script src="cyborg-master/assets/js/owl-carousel.js"></script>
-  <script src="cyborg-master/assets/js/tabs.js"></script>
-  <script src="cyborg-master/assets/js/popup.js"></script>
-  <script src="cyborg-master/assets/js/custom.js"></script>
-
-
-  </body>
-
-</html>
-
-
-<!DOCTYPE html>
-<html lang="pt-BR">
-<!-- Código da roda da vida -->
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Roda da Vida</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
-</head>
-
+</body>
 </html>
