@@ -19,9 +19,6 @@ O empoderamento das habilidades socioemocionais é crucial porque estas habilida
   ## Quem somos
   O Feelmend é seu aliado no crescimento socioemocional. Oferecemos recursos como materiais, tarefas, jogos e dicas para melhorar sua comunicação, autoestima e muito mais. Avance na autoconfiança e habilidades interpessoais de forma divertida e eficaz. Explore e encontre o equilíbrio que você merece!
 
-## Onde estamos
-
-Atualmente, nossa concepção já se materializou com uma identidade visual refinada e cativante. Estamos avançando com determinação nas etapas de codificação e modelagem do banco de dados, transformando cada conceito em uma estrutura sólida e funcional. Com cada progresso, nossa visão está se concretizando de maneira impressionante e transformadora.
 
 ## Missão e valores
 
