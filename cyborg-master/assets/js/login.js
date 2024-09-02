@@ -1,17 +1,13 @@
 function validarLogin() {
-    const usuario = document.getElementById("usuario").value.trim();
-    const senha = document.getElementById("senha").value.trim();
+    var usuario = document.getElementById("usuario").value;
+    var senha = document.getElementById("senha").value;
 
-    if (usuario === "") {
-        alert("Por favor, preencha o campo de usuário.");
-        return false;
+    if (usuario === "" || senha === "") {
+        alert("Por favor, preencha todos os campos.");
+        return false; // Impede o envio do formulário
     }
 
-    if (senha === "") {
-        alert("Por favor, preencha o campo de senha.");
-        return false;
-    }
+    // Adicione mais validações se necessário
 
-    
-    return true;
+    return true; // Permite o envio do formulário se todos os campos forem preenchidos
 }

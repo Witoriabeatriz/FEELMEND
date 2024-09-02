@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="assets/css/fontawesome.css">
     <link rel="stylesheet" href="assets/css/templatemo-cyborg-gaming.css">
     <script src="login.js"></script>
+
     <style>
         h1, h2, h3, h4, h5, h6 {
             color: #e75e8d;
@@ -39,6 +40,17 @@
         .login-container input[type="submit"]:hover {
             background-color: #d24c7d;
         }
+
+        .text-center a {
+            color: #ffffff;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .text-center a:hover {
+            color: #e75e8d;
+            text-decoration: underline;
+        }
     </style>
 </head>
 
@@ -55,7 +67,6 @@
                         <i class="fa fa-search"></i>
                     </form>
                 </div>
-                <!-- ***** Menu Start ***** -->
                 <ul class="nav">
                     <li><a href="index.html" class="active">Início</a></li>
                     <li><a href="browse.html">Quem somos nós</a></li>
@@ -66,7 +77,6 @@
                 <a class='menu-trigger'>
                     <span>Menu</span>
                 </a>
-                <!-- ***** Menu End ***** -->
             </nav>
         </div>
     </header>
@@ -75,18 +85,19 @@
         <div class="row">
             <div class="col-lg-12">
                 <div class="page-content">
-                   
                     <div class="row justify-content-center">
                         <div class="col-lg-7">
                             <div class="login-container">
                                 <h1>Feelmend</h1>
-                                <!-- Formulário de login com validação -->
                                 <form action="#" method="POST" onsubmit="return validarLogin()">
                                     <input type="text" id="usuario" placeholder="Usuário" name="username"> 
                                     <input type="password" id="senha" placeholder="Senha" name="password">  
                                     <input type="submit" value="Entrar">
                                 </form>
-                                <a href="#">Esqueceu sua senha?</a>
+                                <div class="text-center">
+                                    <a href="#">Esqueceu sua senha?</a> <br>
+                                    <a href="#">Cadastre-se aqui</a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -101,7 +112,6 @@
         </div>
     </div>
 
-    <!-- Scripts -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
 </body>
