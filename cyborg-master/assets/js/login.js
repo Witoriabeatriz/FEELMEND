@@ -7,7 +7,5 @@ function validarLogin() {
         return false; // Impede o envio do formulário
     }
 
-    // Adicione mais validações se necessário
-
     return true; // Permite o envio do formulário se todos os campos forem preenchidos
 }
