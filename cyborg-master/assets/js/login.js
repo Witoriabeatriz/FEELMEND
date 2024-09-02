@@ -1,21 +1,17 @@
-document.getElementById('loginForm').addEventListener('submit', function(event) {
-    event.preventDefault();
+function validarLogin() {
+    const usuario = document.getElementById("usuario").value.trim();
+    const senha = document.getElementById("senha").value.trim();
 
-    const username = document.getElementById('username').value.trim();
-    const password = document.getElementById('password').value.trim();
-    const errorMessage = document.getElementById('error-message');
-
-    errorMessage.textContent = '';
-
-    if (username === '') {
-        errorMessage.textContent = 'Por favor, insira seu nome de usuário.';
-        return;
+    if (usuario === "") {
+        alert("Por favor, preencha o campo de usuário.");
+        return false;
     }
 
-    if (password === '') {
-        errorMessage.textContent = 'Por favor, insira sua senha.';
-        return;
+    if (senha === "") {
+        alert("Por favor, preencha o campo de senha.");
+        return false;
     }
 
-    alert('Login realizado com sucesso!');
-});
+    
+    return true;
+}

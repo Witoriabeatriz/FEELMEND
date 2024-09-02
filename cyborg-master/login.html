@@ -16,31 +16,30 @@
             text-align: center;
         }
     
-    .login-container input[type="text"], 
-    .login-container input[type="password"] {
-        width: 100%;
-        padding: 10px;
-        margin: 10px 0;
-        border: 1px solid #ddd;
-        border-radius: 5px;
-    }
+        .login-container input[type="text"], 
+        .login-container input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
 
-    .login-container input[type="submit"] {
-        width: 100%;
-        padding: 10px;
-        background-color: #e75e8d;
-        border: none;
-        border-radius: 5px;
-        color: #fff;
-        font-size: 16px;
-        cursor: pointer;
-    }
+        .login-container input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background-color: #e75e8d;
+            border: none;
+            border-radius: 5px;
+            color: #fff;
+            font-size: 16px;
+            cursor: pointer;
+        }
 
-    .login-container input[type="submit"]:hover {
-        background-color: #d24c7d;
-    }
-</style>
-
+        .login-container input[type="submit"]:hover {
+            background-color: #d24c7d;
+        }
+    </style>
 </head>
 
 <body>
@@ -81,9 +80,10 @@
                         <div class="col-lg-7">
                             <div class="login-container">
                                 <h1>Feelmend</h1>
-                                <form action="#" method="POST">
-                                    <input type="text" placeholder="Usuário" name="username" required> 
-                                    <input type="password" placeholder="Senha" name="password" required>  
+                                <!-- Formulário de login com validação -->
+                                <form action="#" method="POST" onsubmit="return validarLogin()">
+                                    <input type="text" id="usuario" placeholder="Usuário" name="username"> 
+                                    <input type="password" id="senha" placeholder="Senha" name="password">  
                                     <input type="submit" value="Entrar">
                                 </form>
                                 <a href="#">Esqueceu sua senha?</a>
