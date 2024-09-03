@@ -1,31 +1,33 @@
 function Verifica() {
-            let Nome = document.getElementById('participantes').value;
-            let Email = document.getElementById('loginemail').value;
-            let Senha = document.getElementById('loginsenha').value;
-            let Repetindo = document.getElementById('confirmarsenha').value;
-            let CPF = document.getElementById('identificacao').value;
-            let RG = document.getElementById('rg').value;
-            let cep = document.getElementById('Cep').value;
-            let endereco = document.getElementById('rua').value;
-            let numeracao = document.getElementById('numero').value;
-            let bairro = document.getElementById('Bairro').value;
-            let estado = document.getElementById('Estado').value;
-            let cidade = document.getElementById('Cidade').value;
-            let complementação = document.getElementById('complemento').value;
+    let Nome = document.getElementById('participantes').value;
+    let Email = document.getElementById('loginemail').value;
+    let Senha = document.getElementById('loginsenha').value;
+    let Repetindo = document.getElementById('confirmarsenha').value;
+    let CPF = document.getElementById('identificacao').value;
+    let RG = document.getElementById('rg').value;
+    let cep = document.getElementById('Cep').value;
+    let endereco = document.getElementById('rua').value;
+    let numeracao = document.getElementById('numero').value;
+    let bairro = document.getElementById('Bairro').value;
+    let estado = document.getElementById('Estado').value;
+    let cidade = document.getElementById('Cidade').value;
+    let complementacao = document.getElementById('complemento').value;
 
-            if (!Nome || !Email || !Senha || !Repetindo || !CPF || !RG || !cep || !endereco || !numeracao || !bairro || !estado || !cidade || !complementação) {
-                alert("Campos de preenchimento obrigatório. Favor preencher!");
-                return;
-            }
+    if (!Nome || !Email || !Senha || !Repetindo || !CPF || !RG || !cep || !endereco || !numeracao || !bairro || !estado || !cidade || !complementacao) {
+        alert("Campos de preenchimento obrigatório. Favor preencher!");
+        return false;
+    }
 
-            if (Senha !== '' && Repetindo !== '' && Senha === Repetindo) {
-                alert("As senhas conferem!");
-            } else {
-                alert("Senhas não conferem! Por favor digite novamente");
-                return;
-            }
-        }
-        function validarCPF() {
+    if (Senha !== Repetindo) {
+        alert("Senhas não conferem! Por favor digite novamente");
+        return false;
+    }
+
+    // Se tudo estiver certo, o formulário será enviado
+    return true;
+}
+
+function validarCPF() {
             let cpf = document.getElementById('identificacao').value;
             cpf = cpf.replace(/[^\d]/g, ''); // Remove todos os caracteres que não sejam dígitos
         

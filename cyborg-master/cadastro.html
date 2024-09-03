@@ -81,7 +81,8 @@
 
                     <div class="container">
                         <br>
-                        <form>
+                            <form action="processa-cadastro.php" method="post">
+
                             <label id="Nome">Nome:</label>
                             <input class="form-control" id="participantes" type="text">
                             <br><br>
@@ -122,7 +123,7 @@
                             <label id="complementacao">Complemento:</label>
                             <input class="form-control" id="complemento" type="text">
                             <br><br>
-                            <button onclick="Verifica()" class="btn btn-primary btn-custom">Cadastrar</button>
+                            <button type="submit" onclick="return Verifica()" class="btn btn-primary btn-custom">Cadastrar</button>
                             <br><br><br>
                         </form>
                   
@@ -134,12 +135,13 @@
       </div>
     </div>
      </div>
+     
                         
     <!-- Scripts -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/js/cadastro.js"></script>
-    
+    <script src="php/processa-cadastro.php"></script>
   </div>
 </div>
 </div>
