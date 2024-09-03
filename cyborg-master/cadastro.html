@@ -58,7 +58,9 @@
                                 <div class="header-text">
                                     <h6>Feelmend</h6>
                                     <h4><em>empoderando</em> o crescimento socioemocional</h4>
-                                  
+                                    <div class="main-button">
+                                        <a href="login.html">Navegue agora</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -66,21 +68,50 @@
 
                     <div class="container">
                         <br>
-                        <h1>Feelmend</h1>
                         <form>
-                            <label id="email">Digite seu email:</label>
-                            <input class="form-control" id="loginEmail" type="text">
+                            <label id="Nome">Nome:</label>
+                            <input class="form-control" id="participantes" type="text">
                             <br><br>
-                            <label id="Senha">Digite sua senha:</label>
-                            <input class="form-control" id="loginSenha" type="password">
+                            <label id="Email">Email:</label>
+                            <input class="form-control" id="loginemail" type="text">
+                            <br><br>
+                            <label id="Senha">Senha:</label>
+                            <input class="form-control" id="loginsenha" type="password">
+                            <br><br>
+                            <label id="repetindosenha">Confirmar Senha:</label>
+                            <input class="form-control" id="confirmarsenha" type="password">
+                            <br><br>
+                            <label id="CPF">CPF:</label>
+                            <input class="form-control" id="identificacao" type="text" maxlength="11">
+                            <br><br>
+                            <label id="">RG:</label>
+                            <input class="form-control" id="rg" type="text" maxlength="9">
+                            <br><br>
+                            <label id="cep">Cep:</label>
+                            <input class="form-control" id="Cep" type="text" maxlength="8" onblur="buscarCep()">
+                            <br><br>
+                
+                            <label id="endereco">Rua:</label>
+                            <input class="form-control" id="rua" type="text">
+                            <br><br>
+                            <label id="numeracao">Numero:</label>
+                            <input class="form-control" id="numero" type="text">
+                            <br><br>
+                            <label id="bairro">Bairro:</label>
+                            <input class="form-control" id="Bairro" type="text">
+                            <br><br>
+                            <label id="estado">Estado:</label>
+                            <input class="form-control" id="Estado" type="text">
+                            <br><br>
+                            <label id="cidade">Cidade:</label>
+                            <input class="form-control" id="Cidade" type="text">
+                            <br><br>
+                            <label id="complementacao">Complemento:</label>
+                            <input class="form-control" id="complemento" type="text">
                             <br><br>
                             <button onclick="Verifica(); return false;" class="btn btn-primary">ACESSAR</button>
-                            <button onclick="Redirecionar(); return false;" class="btn btn-primary">CADASTRE-SE</button>
+                            <br><br><br>
                         </form>
-                        <div class="text-center">
-                            <a href="#">Esqueceu sua senha?</a> <br>
-                            <a href="#">Cadastre-se aqui</a>
-                        </div>
                   
     <footer>
         <div class="container">
@@ -94,7 +125,6 @@
     <!-- Scripts -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
-    <script src="cyborg-master/assets/js/cadastro.js"></script>
   </div>
 </div>
 </div>

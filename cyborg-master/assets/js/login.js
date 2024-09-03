@@ -1,4 +1,3 @@
-
 // BLOCO DE VERIFICAÇÃO DE PREENCHIMENTO DE CAMPOS
 function Verifica() {
     let user = document.getElementById('loginEmail').value;
@@ -7,9 +6,9 @@ function Verifica() {
     alert("Campos de preenchimento obrigatorio. Favor preencher!");
     }else {
         window.location = "./Campeonato.html";}}
-
-
-// REDIRECIONAR PARA CADASTRO
+        
+        // REDIRECIONAR PARA CADASTRO
 function Redirecionar() {
-window.location.href = "Cadastro.html";
-}
+    window.location.href = "Cadastro.html";
+    }
+    
