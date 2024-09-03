@@ -11,6 +11,20 @@
 </head>
 <style>
 
+.btn-custom {
+    width: 100%; /* Largura total do container */
+    background-color: #f28db1; /* Cor de fundo rosa */
+    border-color:#f28db1 ; /* Cor da borda rosa */
+    color: white; /* Cor do texto */
+    padding: 10px; /* Espaçamento interno */
+    font-size: 16px; /* Tamanho da fonte */
+    transition: background-color 0.3s; /* Animação suave para a cor de fundo */
+  }
+
+  .btn-custom:hover {
+    background-color: #e75e8d ; /* Cor mais clara quando o mouse está sobre o botão */
+    border-color: #e75e8d ; /* Ajuste a borda para corresponder ao fundo (opcional) */
+  }
   h1, h2, h3, h4, h5, h6 {
       margin-top: 0px;
       margin-bottom: 0px;
@@ -66,7 +80,7 @@
 
                     <div class="container">
                         <br>
-                        <h1>Feelmend</h1>
+                
                         <form>
                             <label id="email">Digite seu email:</label>
                             <input class="form-control" id="loginEmail" type="text">
@@ -74,12 +88,14 @@
                             <label id="Senha">Digite sua senha:</label>
                             <input class="form-control" id="loginSenha" type="password">
                             <br><br>
-                            <button onclick="Verifica(); return false;" class="btn btn-primary">ACESSAR</button>
-                            <button onclick="Redirecionar(); return false;" class="btn btn-primary">CADASTRE-SE</button>
+                            <button onclick="Verifica(); return false;" class="btn btn-primary btn-custom">ACESSAR</button>
+                            <br><br>
+                            <button onclick="Redirecionar(); return false;" class="btn btn-primary btn-custom">CADASTRE-SE</button>
+                            
                         </form>
                         <div class="text-center">
                             <a href="#">Esqueceu sua senha?</a> <br>
-                            <a href="#">Cadastre-se aqui</a>
+                            <a href="cadastro.html">Cadastre-se aqui</a>
                         </div>
                   
     <footer>
