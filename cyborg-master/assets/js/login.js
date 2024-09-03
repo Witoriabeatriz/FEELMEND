@@ -4,8 +4,11 @@ function Verifica() {
     let senha = document.getElementById('loginSenha').value;
     if (!user || !senha) {
     alert("Campos de preenchimento obrigatorio. Favor preencher!");
-    }else {
-        window.location = "./Campeonato.html";}}
+    }else if (user.indexOf('@') < 0) {
+    alert("Informe um email válido!");
+    }
+    else {
+        window.location = "../roda.html";}}
         
         // REDIRECIONAR PARA CADASTRO
 function Redirecionar() {

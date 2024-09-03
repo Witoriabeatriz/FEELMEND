@@ -15,7 +15,7 @@ function Verifica() {
     if (!Nome || !Email || !Senha || !Repetindo || !CPF || !RG || ! cep ||! endereco || !numeracao || !bairro || !estado || !cidade ||! complementação) {
     alert("Campos de preenchimento obrigatório. Favor preencher!");
     } else {
-    window.location.href = "roda.html";
+    window.location.href = "login.html";
     }
     if((Senha !== '' || Repetindo !== '') && (Senha == Repetindo)) {
         alert("As senhas conferem!");
