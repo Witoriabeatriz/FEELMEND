@@ -19,3 +19,4 @@ try {
     echo "Erro na conexão: " . $e->getMessage(); // Exibe mensagem de erro em caso de falha na conexão
 }
 ?>
+

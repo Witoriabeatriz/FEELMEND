@@ -21,7 +21,7 @@ $complemento = $_POST['Complemento'];
  try {
         $sql = "INSERT INTO usuarios (nome, email, senha, confirmar_senha, cpf, rg, cep, rua, numero, bairro, estado, cidade, complemento) VALUES ('$nome','$email','$senha','$confirmar_senha','$cpf','$rg','$cep','$rua','$numero','$bairro','$estado','$cidade','$complemento')";
 
-    $stmt = $conn->prepare($sql);
+    $stmt = $conn->prepare($sql);   
 
     // Executa a query
     $stmt->execute();
@@ -31,3 +31,4 @@ $complemento = $_POST['Complemento'];
 }
 $conn = null; // Encerra a conexão
 ?>
+
