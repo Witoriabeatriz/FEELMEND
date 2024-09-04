@@ -88,10 +88,10 @@
 
                     <div class="container">
                         <br>
-                
-                        <form>
-                            <label id="email">Digite seu email:</label>
-                            <input class="form-control" id="loginEmail" type="email">
+    
+                            <form action="processa-login.php" method="post">
+                                <label id="CPF">CPF:</label>
+                                <input class="form-control" id="identificacao" type="cpf" maxlength="11" onblur="validarCPF(this.value)">
                             <br><br>
                             <label id="Senha">Digite sua senha:</label>
                             <input class="form-control" id="loginSenha" type="password">
