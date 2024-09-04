@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+6<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -81,46 +81,46 @@
 
                     <div class="container">
                         <br>
-                            <form action="processa-cadastro.php" method="post">
+                            <form action="../banco de dados/processa-cadastro.php" method="post">
 
                             <label id="Nome">Nome:</label>
-                            <input class="form-control" id="participantes" type="text">
+                            <input class="form-control" id="participantes" type="text" name="Nome">
                             <br><br>
                             <label id="Email">Email:</label>
-                            <input class="form-control" id="loginemail" type="text">
+                            <input class="form-control" id="loginemail" type="text" name="Email">
                             <br><br>
                             <label id="Senha">Senha:</label>
-                            <input class="form-control" id="loginsenha" type="password">
+                            <input class="form-control" id="loginsenha" type="password" name="Senha">
                             <br><br>
                             <label id="repetindosenha">Confirmar Senha:</label>
-                            <input class="form-control" id="confirmarsenha" type="password">
+                            <input class="form-control" id="confirmarsenha" type="password" name="Confirmar_Senha">
                             <br><br>
                             <label id="CPF">CPF:</label>
-                            <input class="form-control" id="identificacao" type="cpf" maxlength="11" onblur="validarCPF(this.value)">
+                            <input class="form-control" id="identificacao" type="cpf" maxlength="11" onblur="validarCPF(this.value)" name="CPF">
                             <br><br>
                             <label id="">RG:</label>
-                            <input class="form-control" id="rg" type="text" maxlength="9">
+                            <input class="form-control" id="rg" type="text" maxlength="9" name="RG">
                             <br><br>
                             <label id="cep">Cep:</label>
-                            <input class="form-control" id="Cep" type="text" maxlength="8" onblur="buscarCep()">
+                            <input class="form-control" id="Cep" type="text" maxlength="8" onblur="buscarCep()" name="Cep">
                             <br><br>
                             <label id="endereco">Rua:</label>
-                            <input class="form-control" id="rua" type="text">
+                            <input class="form-control" id="rua" type="text" name="Rua">
                             <br><br>
                             <label id="numeracao">Numero:</label>
-                            <input class="form-control" id="numero" type="text">
+                            <input class="form-control" id="numero" type="text" name="Numero">
                             <br><br>
                             <label id="bairro">Bairro:</label>
-                            <input class="form-control" id="Bairro" type="text">
+                            <input class="form-control" id="Bairro" type="text" name="Bairro">
                             <br><br>
                             <label id="estado">Estado:</label>
-                            <input class="form-control" id="Estado" type="text">
+                            <input class="form-control" id="Estado" type="text" name="Estado">
                             <br><br>
                             <label id="cidade">Cidade:</label>
-                            <input class="form-control" id="Cidade" type="text">
+                            <input class="form-control" id="Cidade" type="text" name="Cidade">
                             <br><br>
                             <label id="complementacao">Complemento:</label>
-                            <input class="form-control" id="complemento" type="text">
+                            <input class="form-control" id="complemento" type="text" name="Complemento">
                             <br><br>
                             <button type="submit"  value="Enviar" onclick="return Verifica()" class="btn btn-primary btn-custom">Cadastrar</button>
                             <br><br><br>

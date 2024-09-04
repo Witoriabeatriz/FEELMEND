@@ -91,10 +91,10 @@
     
                             <form action="processa-login.php" method="post">
                                 <label id="CPF">CPF:</label>
-                                <input class="form-control" id="identificacao" type="cpf" maxlength="11" onblur="validarCPF(this.value)">
+                                <input class="form-control" id="identificacao" type="cpf" maxlength="11" onblur="validarCPF(this.value)" name="CPF">
                             <br><br>
                             <label id="Senha">Digite sua senha:</label>
-                            <input class="form-control" id="loginSenha" type="password">
+                            <input class="form-control" id="loginSenha" type="password" name="Senha">
                             <br><br>
                             <button onclick="Verifica(); return false;" class="btn btn-primary btn-custom">ACESSAR</button>
                             <br><br>
