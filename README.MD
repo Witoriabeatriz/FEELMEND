@@ -39,9 +39,18 @@ Compreendemos como é difícil enfrentar essas questões sozinho então nosso si
 
 4 - Melhorar a comunicação interpessoal sobre seus sentimentos
 
-# Login
-![Aplicação](login.mp4)
+# Cadastro e Login
+![Aplicação](login.gif)
 
 
+1 - Inclusão da Conexão
+
+2 - Recebimento de Dados
+
+3 - Inserção de Dados  
+
+4 - Redirecionamentos
+
+5 - Tratamento de Erros
 
 
