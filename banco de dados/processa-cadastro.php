@@ -22,13 +22,16 @@ $complemento = $_POST['Complemento'];
         $sql = "INSERT INTO usuarios (nome, email, senha, confirmar_senha, cpf, rg, cep, rua, numero, bairro, estado, cidade, complemento) VALUES ('$nome','$email','$senha','$confirmar_senha','$cpf','$rg','$cep','$rua','$numero','$bairro','$estado','$cidade','$complemento')";
 
     $stmt = $conn->prepare($sql);   
+   // Executa a query
+   $stmt->execute();
 
-    // Executa a query
-    $stmt->execute();
-    echo "Cadastro realizado com sucesso!";
+    // Redireciona para a tela de login
+    header("Location: ../cyborg-master/login.html");
+    exit(); // Garante que o script PHP pare de executar após o redirecionamento
+
 } catch(PDOException $e) {
     echo "Erro ao cadastrar: " . $e->getMessage();
 }
+
 $conn = null; // Encerra a conexão
 ?>
-

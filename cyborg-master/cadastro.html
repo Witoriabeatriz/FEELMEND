@@ -10,28 +10,43 @@
     <link rel="stylesheet" href="assets/css/templatemo-cyborg-gaming.css">
 </head>
 <style>
+    .btn-custom {
+        width: 100%;
+        /* Largura total do container */
+        background-color: #f28db1;
+        /* Cor de fundo rosa */
+        border-color: #f28db1;
+        /* Cor da borda rosa */
+        color: white;
+        /* Cor do texto */
+        padding: 10px;
+        /* Espaçamento interno */
+        font-size: 16px;
+        /* Tamanho da fonte */
+        transition: background-color 0.3s;
+        /* Animação suave para a cor de fundo */
+    }
 
-.btn-custom {
-    width: 100%; /* Largura total do container */
-    background-color: #f28db1; /* Cor de fundo rosa */
-    border-color:#f28db1 ; /* Cor da borda rosa */
-    color: white; /* Cor do texto */
-    padding: 10px; /* Espaçamento interno */
-    font-size: 16px; /* Tamanho da fonte */
-    transition: background-color 0.3s; /* Animação suave para a cor de fundo */
-  }
+    .btn-custom:hover {
+        background-color: #e75e8d;
+        /* Cor mais clara quando o mouse está sobre o botão */
+        border-color: #e75e8d;
+        /* Ajuste a borda para corresponder ao fundo (opcional) */
+    }
 
-  .btn-custom:hover {
-    background-color: #e75e8d ; /* Cor mais clara quando o mouse está sobre o botão */
-    border-color: #e75e8d ; /* Ajuste a borda para corresponder ao fundo (opcional) */
-  }
-  h1, h2, h3, h4, h5, h6 {
-      margin-top: 0px;
-      margin-bottom: 0px;
-      color: #e75e8d;
-      font-weight: 700;
-  }
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        margin-top: 0px;
+        margin-bottom: 0px;
+        color: #e75e8d;
+        font-weight: 700;
+    }
 </style>
+
 <body>
     <header class="header-area header-sticky">
         <div class="container">
@@ -45,20 +60,20 @@
                         <i class="fa fa-search"></i>
                     </form>
                 </div>
-              <!-- ***** Menu Start ***** -->
-              <ul class="nav">
-                <li><a href="index.html" class="active">Início</a></li>
-                <li><a href="browse.html">Nós</a></li>
-                <li><a href="details.html">Detalhes</a></li>
-                <li><a href="roda.html">Roda</a></li>
-                <li><a href="streams.html" >Histórico</a></li>
-                <li><a href="profile.html">Perfil </a></li>
-            </ul>   
-            <a class='menu-trigger'>
-                <span>Menu</span>
-            </a>
-            <!-- ***** Menu End ***** -->
-              
+                <!-- ***** Menu Start ***** -->
+                <ul class="nav">
+                    <li><a href="index.html" class="active">Início</a></li>
+                    <li><a href="browse.html">Nós</a></li>
+                    <li><a href="details.html">Detalhes</a></li>
+                    <li><a href="roda.html">Roda</a></li>
+                    <li><a href="streams.html">Histórico</a></li>
+                    <li><a href="profile.html">Perfil </a></li>
+                </ul>
+                <a class='menu-trigger'>
+                    <span>Menu</span>
+                </a>
+                <!-- ***** Menu End ***** -->
+
             </nav>
         </div>
     </header>
@@ -73,15 +88,15 @@
                                 <div class="header-text">
                                     <h6>Feelmend</h6>
                                     <h4><em>empoderando</em> o crescimento socioemocional</h4>
-                                
+
                                 </div>
                             </div>
                         </div>
-                    </div> 
+                    </div>
 
                     <div class="container">
                         <br>
-                            <form action="../banco de dados/processa-cadastro.php" method="post">
+                        <form action="../banco de dados/processa-cadastro.php" method="post">
 
                             <label id="Nome">Nome:</label>
                             <input class="form-control" id="participantes" type="text" name="Nome">
@@ -96,13 +111,15 @@
                             <input class="form-control" id="confirmarsenha" type="password" name="Confirmar_Senha">
                             <br><br>
                             <label id="CPF">CPF:</label>
-                            <input class="form-control" id="identificacao" type="cpf" maxlength="11" onblur="validarCPF(this.value)" name="CPF">
+                            <input class="form-control" id="identificacao" type="cpf" maxlength="11"
+                                onblur="validarCPF(this.value)" name="CPF">
                             <br><br>
                             <label id="">RG:</label>
                             <input class="form-control" id="rg" type="text" maxlength="9" name="RG">
                             <br><br>
                             <label id="cep">Cep:</label>
-                            <input class="form-control" id="Cep" type="text" maxlength="8" onblur="buscarCep()" name="Cep">
+                            <input class="form-control" id="Cep" type="text" maxlength="8" onblur="buscarCep()"
+                                name="Cep">
                             <br><br>
                             <label id="endereco">Rua:</label>
                             <input class="form-control" id="rua" type="text" name="Rua">
@@ -122,30 +139,31 @@
                             <label id="complementacao">Complemento:</label>
                             <input class="form-control" id="complemento" type="text" name="Complemento">
                             <br><br>
-                            <button type="submit"  value="Enviar" onclick="return Verifica()" class="btn btn-primary btn-custom">Cadastrar</button>
+                            <button type="submit" value="Enviar" onclick="return Verifica()"
+                                class="btn btn-primary btn-custom">Cadastrar</button>
                             <br><br><br>
                         </form>
 
-    <footer>
-        <div class="container">
-            <p>Feelmend © 2024 empoderando o crescimento socioemocional.</p>
+                        <footer>
+                            <div class="container">
+                                <p>Feelmend © 2024 empoderando o crescimento socioemocional.</p>
+                            </div>
+                        </footer>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Scripts -->
+            <script src="vendor/jquery/jquery.min.js"></script>
+            <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+            <script src="assets/js/cadastro.js"></script>
+            <script src="php/processa-cadastro.php"></script>
         </div>
-    </footer>
-      </div>
     </div>
-     </div>
-     
-                        
-    <!-- Scripts -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
-    <script src="assets/js/cadastro.js"></script>
-    <script src="php/processa-cadastro.php"></script>
-  </div>
-</div>
-</div>
-</div>
-</div>
+    </div>
+    </div>
+    </div>
 
 </body>
 
