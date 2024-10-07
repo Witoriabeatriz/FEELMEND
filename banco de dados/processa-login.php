@@ -22,7 +22,7 @@ try {
         // Login bem-sucedido
         echo "Login realizado com sucesso!";
         // Redirecionar para a página principal ou dashboard
-        header("Location: ../cyborg-master/roda.html");
+        header("Location: ../cyborg-master/rdlogin.html");
         exit();
         
     } else {

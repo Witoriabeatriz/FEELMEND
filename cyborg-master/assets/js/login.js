@@ -8,7 +8,7 @@ function Verifica() {
     alert("Informe um CPF válido!");
     }
     else {
-        window.location = "../roda.html";}}
+        window.location = "../rdlogin.html";}}
         
         // REDIRECIONAR PARA CADASTRO
 function Redirecionar() {
